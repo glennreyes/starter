@@ -38,7 +38,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={cn(
           mono.variable,
           sans.variable,
-          'font-sans motion-safe:scroll-smooth',
+          'bg-background text-foreground font-sans motion-safe:scroll-smooth',
         )}
       >
         {children}
