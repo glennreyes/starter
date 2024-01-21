@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import type { ReactNode } from 'react';
 
 import { cn } from '@/lib/utils';
+import { Analytics } from '@vercel/analytics/react';
 import { Inter, Roboto_Mono } from 'next/font/google';
 
 import './globals.css';
@@ -37,10 +38,11 @@ const RootLayout = ({ children }: RootLayoutProps) => (
       className={cn(
         mono.variable,
         sans.variable,
-        'bg-background text-foreground font-sans motion-safe:scroll-smooth',
+        'bg-background font-sans text-foreground motion-safe:scroll-smooth',
       )}
     >
       {children}
+      <Analytics />
     </body>
   </html>
 );
