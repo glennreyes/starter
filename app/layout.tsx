@@ -29,7 +29,7 @@ const RootLayout = ({ children }: RootLayoutProps) => (
       className={cn(
         GeistSans.variable,
         GeistMono.variable,
-        'dark bg-background font-sans text-foreground motion-safe:scroll-smooth',
+        'dark bg-background font-sans text-foreground antialiased motion-safe:scroll-smooth',
       )}
     >
       {children}
